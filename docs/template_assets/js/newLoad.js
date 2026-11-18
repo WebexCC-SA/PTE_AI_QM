@@ -13,3 +13,6 @@ function setValues() {
     event.preventDefault()
     loadem()
 }
+
+// With instant navigation pages are swapped without a reload, so refill the stored values on every page change
+if (typeof document$ !== "undefined") { document$.subscribe(() => loadem()) }

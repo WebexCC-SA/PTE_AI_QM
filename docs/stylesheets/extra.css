@@ -112,15 +112,15 @@ copy::after, .copy::after {
 copy:hover::after, .copy:hover::after {
   color: #00bdeb;
 }
-form#info input{
+form.attendee-form input{
   border: solid 1px;
 }
-form#info button{
+form.attendee-form button{
     border:solid 2px;
     border-radius: 25px;
     padding: 10px;
 }
-form#info button:hover{
+form.attendee-form button:hover{
     background-color:rgb(195, 193, 201);
 }
 
@@ -145,7 +145,7 @@ form#info button:hover{
   color: #0b5cab;
 }
 
-.md-typeset .attendee-id-box form#info {
+.md-typeset .attendee-id-box form.attendee-form {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -153,13 +153,13 @@ form#info button:hover{
   margin: 0 0 1rem;
 }
 
-.md-typeset .attendee-id-box form#info label {
+.md-typeset .attendee-id-box form.attendee-form label {
   font-weight: 700;
   font-size: 1.2rem;
   color: #051C2C;
 }
 
-.md-typeset .attendee-id-box form#info input {
+.md-typeset .attendee-id-box form.attendee-form input {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -171,13 +171,13 @@ form#info button:hover{
   color: #051C2C;
 }
 
-.md-typeset .attendee-id-box form#info input:focus {
+.md-typeset .attendee-id-box form.attendee-form input:focus {
   outline: 3px solid #3a7fff;
   outline-offset: 1px;
   border-color: #3a7fff;
 }
 
-.md-typeset .attendee-id-box form#info button {
+.md-typeset .attendee-id-box form.attendee-form button {
   font-size: 1.1rem;
   font-weight: 700;
   color: #fff;
@@ -188,7 +188,7 @@ form#info button:hover{
   cursor: pointer;
 }
 
-.md-typeset .attendee-id-box form#info button:hover {
+.md-typeset .attendee-id-box form.attendee-form button:hover {
   background: #0099c4;
   border-color: #0099c4;
   color: #fff;
@@ -214,12 +214,12 @@ form#info button:hover{
 
 [data-md-color-scheme="slate"] .md-typeset .attendee-id-box h3,
 [data-md-color-scheme="slate"] .md-typeset .attendee-id-box > p,
-[data-md-color-scheme="slate"] .md-typeset .attendee-id-box form#info label,
+[data-md-color-scheme="slate"] .md-typeset .attendee-id-box form.attendee-form label,
 [data-md-color-scheme="slate"] .md-typeset .attendee-id-box .attendee-id-status {
   color: #7adfff;
 }
 
-[data-md-color-scheme="slate"] .md-typeset .attendee-id-box form#info input {
+[data-md-color-scheme="slate"] .md-typeset .attendee-id-box form.attendee-form input {
   background: #0d2a38;
   color: #fff;
   border-color: #00bdeb;
@@ -227,4 +227,33 @@ form#info button:hover{
 
 [data-md-color-scheme="slate"] .md-typeset .attendee-id-box w.attendee {
   color: #7adfff;
+}
+/* Credentials reveal */
+.md-typeset .attendee-id-box .creds-box {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #00bdeb;
+}
+
+.md-typeset .attendee-id-box .creds-msg {
+  margin: 0.25rem 0 0;
+  font-weight: 600;
+  color: #051C2C;
+}
+
+.md-typeset .attendee-id-box .creds-msg.error {
+  color: #c0392b;
+}
+
+.md-typeset .attendee-id-box .creds-msg code {
+  font-size: 1.05rem;
+  user-select: all;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .attendee-id-box .creds-msg {
+  color: #e8f4fa;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .attendee-id-box .creds-msg.error {
+  color: #ff8a80;
 }

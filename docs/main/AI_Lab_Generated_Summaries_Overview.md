@@ -2,7 +2,7 @@
 
 In this lab we will review some of the Generative Summaries features that help human agents provide a better customer experience and save time on taking notes.
 
-Due to time constraints on this lab, we cannot review all of the Generative Summary features. We will review the Virtual Agent summaries as well as Wrap-up summaries, and then configure a custom Wrap-up Summary template. The other summary features are similar from a configuration standpoint, and you can find them in the Bonus lab section if you want to review them later.
+Due to time constraints on this lab, we cannot review all of the Generative Summary features. We will review the Virtual Agent summaries as well as Wrap-up summaries, and then configure a custom Wrap-up Summary template. The other summary features are similar from a configuration standpoint.
 
 ## Call Flow Overview
 
