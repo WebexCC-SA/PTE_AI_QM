@@ -27,8 +27,11 @@
     .tx-container {
         padding-top: .0rem;
         /* background: var(--md-primary-fg-color); */
-        background-image: url("template_assets/bgTest.gif");
+        /* Lisbon panorama with a dark overlay so the white hero text stays readable */
+        background-image: linear-gradient(rgba(5, 28, 44, 0.55), rgba(5, 28, 44, 0.65)), url("template_assets/lisbon.jpg");
         background-size: cover;
+        background-position: center;
+        position: relative;
 
     }
 
@@ -282,6 +285,18 @@
         padding-top: 20px;
     }
 
+    .photo-credit {
+        position: absolute;
+        right: 12px;
+        bottom: 8px;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .photo-credit a {
+        color: inherit;
+    }
+
     .event {
         display: flex;
         justify-content: center;
@@ -343,6 +358,7 @@
             </div>
         </div>
     </div>
+    <div class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:LisbonSkyline.jpg" target="_blank">acediscovery</a>, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a></div>
 </section>
 
 {% endblock %}
