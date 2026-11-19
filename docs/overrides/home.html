@@ -27,8 +27,8 @@
     .tx-container {
         padding-top: .0rem;
         /* background: var(--md-primary-fg-color); */
-        /* Lisbon panorama with a dark overlay so the white hero text stays readable */
-        background-image: linear-gradient(rgba(5, 28, 44, 0.55), rgba(5, 28, 44, 0.65)), url("template_assets/lisbon.jpg");
+        /* Home photo with a dark overlay so the white hero text stays readable */
+        background-image: linear-gradient(rgba(5, 28, 44, 0.55), rgba(5, 28, 44, 0.65)), url("template_assets/home_bg.jpg");
         background-size: cover;
         background-position: center;
         position: relative;
@@ -285,26 +285,13 @@
         padding-top: 20px;
     }
 
-    .photo-credit {
-        position: absolute;
-        right: 12px;
-        bottom: 8px;
-        font-size: 0.7rem;
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .photo-credit a {
-        color: inherit;
-    }
-
     .event {
         display: flex;
         justify-content: center;
         position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: min(48%, 380px);
+        right: 2rem;
+        bottom: 1.5rem;
+        width: clamp(70px, 9vw, 130px);
         height: auto;
     }
 
@@ -333,14 +320,6 @@
                         document.write(lab)
                     </script>
                 </h1>
-                <div class="tx-hero__image">
-
-                   
-                    <!-- <img src="template_assets/webex-3d-symbol-color(1).png" draggable="false"> -->
-                    <div class="event"><img src="template_assets/webex-3d-symbol-color(1).png" draggable="false"></div>
-                    <!-- <div id="five" class="hold event">{{config.extra.site_event}}</div> -->
-
-                </div>
                 <!-- <p>
                     <script>
                         const descr = title.substring(title.indexOf(" ") + 1)
@@ -358,7 +337,7 @@
             </div>
         </div>
     </div>
-    <div class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:LisbonSkyline.jpg" target="_blank">acediscovery</a>, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank">CC BY 4.0</a></div>
+    <div class="event"><img src="template_assets/webex-3d-symbol-color(1).png" alt="Webex" draggable="false"></div>
 </section>
 
 {% endblock %}
